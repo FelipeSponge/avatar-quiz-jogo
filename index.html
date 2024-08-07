@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quizz Avatar</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h1>Quizz Avatar</h1>
+        </header>
+
+        <section class="principal">
+            <div class="principal__conteudo">
+                <div class="principal__imagem"></div>
+                <div class="principal__inicio">
+                    <h2 class="inicio__mensagem">Bem vindo ao quizz</h2>
+                    <h3>Avatar: A Lenda de Aang</h3>
+                    <button onclick="iniciarJogo()" class="inicio__botao">
+                        INICIAR
+                    </button>
+                </div>
+                <div class="principal__botoes">
+                    <h3 class="principal__pergunta"></h3>
+                    <button
+                        onclick="escolhaJogador(this)"
+                        class="principal__botao"
+                        id="btn1"
+                    ></button>
+                    <button
+                        onclick="escolhaJogador(this)"
+                        class="principal__botao"
+                        id="btn2"
+                    ></button>
+                    <button
+                        onclick="escolhaJogador(this)"
+                        class="principal__botao"
+                        id="btn3"
+                    ></button>
+                    <button
+                        onclick="escolhaJogador(this)"
+                        class="principal__botao"
+                        id="btn4"
+                    ></button>
+                </div>
+                <div class="final__imagem" id="img1"></div>
+                <div class="final__imagem" id="img2"></div>
+                <div class="principal__final">
+                    <div class="final__texto">Voce Acertou:</div>
+                    <div class="final__qtd acertos">5</div>
+                    <div class="final__descricao exp__acertos">
+                        exemplo, exemplo, exemplos
+                    </div>
+                    <div class="final__texto">Voce Errou:</div>
+                    <div class="final__qtd erros">5</div>
+                    <div class="final__descricao exp__erros">
+                        exemplo, exemplo, exemplos
+                    </div>
+                </div>
+            </div>
+
+            <div class="principal__reiniciar">
+                <button onclick="reiniciarJogo()" class="reiniciar__botao">
+                    NOVO JOGO
+                </button>
+            </div>
+        </section>
+
+        <script src="app.js" defer></script>
+    </body>
+</html>
